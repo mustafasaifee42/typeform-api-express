@@ -4,6 +4,7 @@ var cors = require('cors');
 var axios = require('axios');
 
 const app = express();
+app.use(cors());
 const router = express.Router();
 
 router.get('/', function(req, res, next) {
